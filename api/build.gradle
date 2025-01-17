@@ -14,7 +14,7 @@ ext.moduleName = 'opus-java-api'
 archivesBaseName = moduleName
 
 dependencies {
-    implementation 'net.java.dev.jna:jna:4.4.0'
+    implementation 'net.java.dev.jna:jna:5.16.0'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {

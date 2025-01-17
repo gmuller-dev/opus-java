@@ -18,7 +18,11 @@ package club.minnced.opus.util;
 import com.sun.jna.Platform;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Interface for opus binaries
@@ -30,7 +34,8 @@ public final class OpusLibrary {
 
     static {
         platforms = new HashMap<>(10);
-        platforms.put("darwin", "dylib");
+        platforms.put("darwin-aarch64", "dylib");
+        platforms.put("darwin-x86-64", "dylib");
         platforms.put("linux-arm", "so");
         platforms.put("linux-aarch64", "so");
         platforms.put("linux-x86", "so");
